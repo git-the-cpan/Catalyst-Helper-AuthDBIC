@@ -1,4 +1,4 @@
-use inc::Module::Install;
+use inc::Module::Install 0.87;
 
 name     'Catalyst-Helper-AuthDBIC';
 all_from 'lib/Catalyst/Helper/AuthDBIC.pm';
@@ -27,6 +27,8 @@ install_script glob('script/*.pl');
 
 
 auto_install;
+
+resources repository => 'http://dev.catalyst.perl.org/repos/Catalyst/Catalyst-Helper-AuthDBIC/trunk/';
 
 WriteAll;
 
